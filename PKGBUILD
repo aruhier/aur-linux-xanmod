@@ -66,8 +66,8 @@ _makenconfig=y
 ### IMPORTANT: Do no edit below this line unless you know what you're doing
 
 pkgbase=linux-xanmod
-pkgver=5.6.8
-_major=5.6
+pkgver=5.7.0
+_major=5.7
 _branch=5.x
 xanmod=1
 pkgrel=1
@@ -100,9 +100,9 @@ for _patch in $_commits; do
 done
 
 
-sha256sums=('e342b04a2aa63808ea0ef1baab28fc520bd031ef8cf93d9ee4a31d4058fcb622'
+sha256sums=('de8163bb62f822d84f7a3983574ec460060bf013a78ff79cd7c979ff1ec1d7e0'
             'SKIP'
-            '77acee7265bb9010ba8555baccd4dcc9379cb3284e72d022bc8f0e987de73652'
+            'a2eee5c6f4e944b72837e76f2cc5d1b9c54212df9e71bd4b41719bc6fcb73ae7'
             '4a687d74385a83b23a32358ab7f71763d63e5a8ef4bda8484be2dbfba701e21b'
             '2c7369218e81dee86f8ac15bda741b9bb34fa9cefcb087760242277a8207d511'
             '9c507bdb0062b5b54c6969f7da9ec18b259e06cd26dbe900cfe79a7ffb2713ee')
