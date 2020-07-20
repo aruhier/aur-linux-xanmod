@@ -66,11 +66,11 @@ _makenconfig=
 ### IMPORTANT: Do no edit below this line unless you know what you're doing
 
 pkgbase=linux-xanmod
-pkgver=5.7.8
+pkgver=5.7.9
 _major=5.7
 _branch=5.x
-xanmod=2
-pkgrel=2
+xanmod=1
+pkgrel=1
 pkgdesc='Linux Xanmod'
 url="http://www.xanmod.org/"
 arch=(x86_64)
@@ -97,7 +97,6 @@ _commits=""
 for _patch in $_commits; do
     source+=("${_patch}.patch::https://git.archlinux.org/linux.git/patch/?id=${_patch}")
 done
-
 
 sha256sums=('SKIP'
             '1cb841f93fed1c1dc8458ba425451969442536f30743304f0e39fcc02e64651d'
