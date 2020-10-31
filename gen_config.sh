@@ -1,5 +1,5 @@
 #!/bin/bash
-TAG="5.8.11-xanmod1"
+TAG="5.9.1-xanmod1"
 REPO="https://raw.githubusercontent.com/xanmod/linux/$TAG"
 
 wget -O config "$REPO/.config"
