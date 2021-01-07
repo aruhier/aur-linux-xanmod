@@ -1,6 +1,6 @@
 #
 # Build for Ryzen 1+
-s/^(CONFIG_MZEN=.*|# CONFIG_MZEN is not set)/CONFIG_MZEN=y/;
+s/^(CONFIG_MZEN2=.*|# CONFIG_MZEN2 is not set)/CONFIG_MZEN2=y/;
 # FS
 s/^(CONFIG_EXT4_FS=.*|# CONFIG_EXT4_FS is not set)/CONFIG_EXT4_FS=y/;
 s/^(CONFIG_BTRFS_FS=.*|# CONFIG_BTRFS_FS is not set)/CONFIG_BTRFS_FS=y/;
