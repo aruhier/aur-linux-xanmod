@@ -31,6 +31,10 @@ s/^(CONFIG_SATA_AHCI=.*|# CONFIG_SATA_AHCI is not set)/CONFIG_SATA_AHCI=y/;
 s/^(CONFIG_AMD_IOMMU=.*|# CONFIG_AMD_IOMMU is not set)/CONFIG_AMD_IOMMU=y/;
 # Include AMDGPU
 s/^(CONFIG_DRM_AMDGPU=.*|# CONFIG_DRM_AMDGPU is not set)/CONFIG_DRM_AMDGPU=y/;
+s/^CONFIG_DRM_RADEON=.*/# CONFIG_DRM_RADEON is not set/;
+s/^CONFIG_FB_RADEON=.*/# CONFIG_FB_RADEON is not set/;
+s/^CONFIG_FB_ATY128=.*/# CONFIG_FB_ATY128 is not set/;
+s/^CONFIG_FB_ATY=.*/# CONFIG_FB_ATY is not set/;
 # NFS
 s/^(CONFIG_NFS_V4=.*|# CONFIG_NFS_V4 is not set)/CONFIG_NFS_V4=y/;
 # Mellanox
