@@ -1,6 +1,5 @@
 #!/bin/bash
-TAG="5.12.8-xanmod1"
-REPO="https://raw.githubusercontent.com/xanmod/linux/$TAG"
+TAG="6.13"
 
-wget -O config "$REPO/.config"
+cp /var/db/repos/localrepo/sys-kernel/cachyos-sources/files/$TAG/config-bore config
 sed -r -f config.sed -i config

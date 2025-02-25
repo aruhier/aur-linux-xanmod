@@ -1,7 +1,9 @@
 #!/bin/bash
 
+sudo rm /usr/src/linux/.config
+
 # CLANG and LTO
-sudo LLVM=1 LLVM_IAS=1 genkernel --kernel-config=config --nconfig all
+sudo CC=clang CXX=clang++ --preserve-env=PATH -- bash -c 'genkernel --kernel-config=config --nconfig --no-install kernel && cd /usr/src/linux; make modules_install -s -j && make install; rm /var/tmp/genkernel/*'
 
 # GCC
-# sudo genkernel --kernel-config=config --nconfig all
+# sudo --preserve-env=PATH -- bash -c 'genkernel --kernel-config=config --nconfig --no-install kernel && cd /usr/src/linux; make modules_install -s -j && make install; rm /var/tmp/genkernel/*'
